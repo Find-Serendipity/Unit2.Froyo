@@ -19,12 +19,12 @@ const countFroyo = (userPrompt) => {
         // if a flavor from the index has not been added to the orderObj yet
         if (orderObj[order[i]]) {
             // add the index item to the object key
-            orderObj[order[i]]++;
+            orderObj[order[i]] = 1;
         }
         // else, if the flavor already exists in orderObj
         else {
             // add it's count to it's total number
-            orderObj[order[i]] = 1;
+            orderObj[order[i]]++;
         }
     }
     // in the console, show a table
